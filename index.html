@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-5</title>
+    <style>
+        body {
+            background-color: rgba(220, 220, 220, 0.459);
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            background-color: white;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 34px;
+            margin: auto;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(228, 11, 11);
+        }
+
+        .image {
+            /* position:a; */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+
+        #h2 {
+            color: rgb(90, 53, 126);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <!-- <div class="navitems"> -->
+        <ul class="navbar">
+            <li><a target="_blank" href="index.html">Home</a>|</li>
+            <li><a target="_blank" href="./Practical-1.html">Practical-1</a>|
+            </li>
+            <li><a target="_blank" href="./Practical-2.html">Practical-2</a>|
+            </li>
+            <li><a target="_blank" href="./Practical-3.html">Practical-3</a>|
+            </li>
+            <li><a target="_blank" href="./Practical-4.html">Practical-4</a>|
+            </li>
+            <li><a target="_blank" href="./index.html">Practical-5</a>|
+            </li>
+        </ul>
+    </div>
+
+    <h1 id="h2">Introduction to Frontend Technology</h1>
+    <img class="image" src="./img.png" alt="" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="23,41,227,229" href="html.html">
+        <area shape="rect" coords="247,44,483,285" href="css.html">
+        <area shape="rect" coords="12,335,275,516" href="js.html">
+        <area shape="rect" coords="298,327,528,517" href="bootstrap.html">
+    </map>
+    <h3 style="color: red; text-align: center;">Click on any part of logo to know more about techs</h3>
+</body>
+
+</html>
