@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-6</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            background-color: lightgrey;
+            margin: 0;
+            font-family: 'Merriweather', serif;
+        }
+
+        h1 {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        #cards {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+        }
+
+        .box {
+            display: flex;
+            background-color: whitesmoke;
+            margin: 16px 10px;
+            padding: auto;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            text-align: justify;
+            align-items: center;
+            border-radius: 12px;
+            letter-spacing: 2px;
+        }
+
+        .box p {
+            margin: 10px 10px 10px 10px;
+            padding: 0px;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: honeydew;
+            margin: 15px;
+            padding: 12px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px red;
+            background-color: #9e7471e8;
+            border-radius: 15px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .box a:hover {
+            color: hotpink;
+            background-color: rgb(127, 152, 219);
+        }
+
+        .box img {
+            align-items: center;
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Practical-6 : Create a Card Layout using CSS layout properties.
+    </h1>
+    <div id="cards">
+        <div class="box" id="html">
+
+            <img src="./images/html.png" alt="">
+            <h3>Introduction to Html </h3>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem alias non tempore quaerat
+                velit consequatur.</p>
+
+            <a href="html.html" id="link">Read More</a>
+        </div>
+
+        <div class="box" id="css">
+            <img src="./images/css.jpg" alt="">
+            <h3>Introduction to css </h3>
+
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem alias non tempore quaerat.
+            </p>
+
+            <a href="css.html" id="link">Read More</a>
+        </div>
+
+        <div class="box" id="jquery">
+            <img src="./images/jquer.png" alt="">
+            <h3>Introduction to jquery </h3>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem alias non tempore quaerat
+                velit consequatur.</p>
+
+            <a href="jquery.html" id="link">Read More</a>
+        </div>
+
+        <div class="box" id="bootsrap">
+            <img src="./images/bootstrap.jpg" alt="">
+            <h3>Introduction to bootsrap </h3>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem alias non tempore quaerat
+                velit consequatur.</p>
+
+            <a href="bootstrap.html" id="link">Read More</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
