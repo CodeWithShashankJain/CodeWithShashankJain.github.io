@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 3px;
+            border: solid rgb(247, 244, 240);
+        }
+
+        h1,
+        .text {
+            color: honeydew;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(128, 128, 128, 0.726);
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            height: 50%;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            background-color: skyblue;
+            margin: 15px;
+            padding: 200px;
+            text-align: center;
+        }
+
+        .section1 {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            background-color: white;
+            text-align: center;
+            width: 94vw;
+            height: 50vh;
+            margin: 15px;
+            padding: 10px;
+        }
+
+
+        .circle {
+            display: flex;
+            background-color: rgba(226, 212, 10, 0.904);
+            width: 250px;
+            height: 250px;
+            margin: 36px 16px;
+            border-radius: 50%;
+        }
+
+        .section2,
+        .section3 {
+            display: flex;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        .main,
+        .article {
+            width: 50vw;
+            height: 90vh;
+            margin: 16px 16px;
+        }
+
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #e9470cd3;
+            flex-direction: column;
+            width: 95%;
+            height: 155px;
+            margin: 13px;
+            padding: 2px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .articles:first-child {
+            margin-top: 0px;
+        }
+
+        .articles:last-child {
+            height: 180px;
+        }
+
+        .main {
+            background-color: grey;
+            text-align: center;
+        }
+
+        .main h1 {
+            margin-top: 250px;
+            color: white;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            float: left;
+            background-color: orangered;
+            width: 20vw;
+            height: 50vh;
+            margin: 16px 10px 14px 34px;
+        }
+
+        .section-4 {
+            display: flex;
+            background-color: rgb(170, 47, 170);
+            width: 94vw;
+            height: 12vh;
+            margin: 15px;
+            padding: 10px;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="banner">
+        <h1>Banner</h1>
+    </div>
+    <h2 style="text-align: center;">Section-1</h2>
+    <div class="section1">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <h2 style="text-align: center;">Section-2</h2>
+    <div class="section2">
+        <div class="main">
+            <h1>Main Content</h1>
+        </div>
+        <div class="article">
+            <div class="articles"><span class="text">Article-1</span></div>
+            <div class="articles"><span class="text">Article-2</span></div>
+            <div class="articles"><span class="text">Article-3</span></div>
+        </div>
+    </div>
+    <h2 style="text-align: center;">Section-3</h2>
+    <div class="section-3">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h2 style="text-align: center;">Section-4</h2>
+    <div class="section-4">
+        <span class="text" style="padding: 15px;">Footer</span>
+    </div>
+</body>
+
+</html>
