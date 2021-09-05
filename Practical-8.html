@@ -48,15 +48,17 @@
             font-size: 30px;
             padding: 14px;
         }
-        
+
         .navbar li a:link {
             text-decoration: none;
             margin: 12px;
         }
-        .navbar li a:hover{
+
+        .navbar li a:hover {
             background-color: white;
             color: black;
         }
+
         #home {
             display: flex;
         }
@@ -171,6 +173,7 @@
 
         /* technology */
         #technology {
+            margin-top: 15px;
             width: 100vw;
             height: 85vh;
         }
@@ -225,36 +228,34 @@
             align-items: center;
             width: 250px;
             height: 140px;
-            margin: 15px;
             border-radius: 10px;
         }
 
 
-        .imgs{
+        .imgs {
             width: 200px;
+        }
+
+        .mg {
             object-fit: cover;
         }
 
         /* contact */
 
-        #contact{
-            margin-top: 24px;
+        #contact {
             height: 25vh;
         }
-        
-        .foot{
+
+        .foot {
             margin-top: 16px;
             background-color: rgb(214, 73, 120);
             height: 15vh;
             text-align: center;
         }
-       
-        .ele{
+
+        .ele {
             padding-top: 15px;
-            display: flex;
-            flex-direction: column;
         }
-       
     </style>
 </head>
 
@@ -349,7 +350,7 @@
             <div id="cards">
                 <div class="boxes" id="html">
                     <div class="imgs">
-                        <img src="./images/html.png" alt="">
+                        <img class="mg" src="./images/html.png" alt="">
                     </div>
 
                     <h3>Introduction to Html </h3>
@@ -411,11 +412,11 @@
 
         <section id="contact">
             <h2 style="text-align: center;">Contact Us</h2>
-            
+
             <footer class="foot">
                 <div class="ele">
-                <h3>Website terminated for Practical-8 <span>©</span> Beta-labs</h3>
-                <a href="#home" class="anch">Back to top</a>
+                    <h3>Website terminated for Practical-8 <span>©</span> Beta-labs</h3>
+                    <a href="#home" class="anch">Back to top</a>
                 </div>
             </footer>
         </section>
