@@ -8,9 +8,12 @@
     <title>Practical-6</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
+        
+
         body {
+            margin: 0px;
+            padding: 0px;
             background-color: lightgrey;
-            margin: 0;
             font-family: 'Merriweather', serif;
         }
 
@@ -26,7 +29,7 @@
             width: 100%;
         }
 
-        .box {
+        .boxes {
             display: flex;
             background-color: whitesmoke;
             margin: 16px 10px;
@@ -41,14 +44,14 @@
             letter-spacing: 2px;
         }
 
-        .box p {
+        .boxes p {
             margin: 10px 10px 10px 10px;
             padding: 0px;
             text-align: justify;
             letter-spacing: 3px;
         }
 
-        .box a {
+        .boxes a {
             text-decoration: none;
             color: honeydew;
             margin: 15px;
@@ -61,12 +64,12 @@
             text-align: center;
         }
 
-        .box a:hover {
+        .boxes a:hover {
             color: hotpink;
             background-color: rgb(127, 152, 219);
         }
 
-        .box img {
+        .boxes img {
             align-items: center;
             width: 250px;
             margin: 15px;
@@ -76,10 +79,11 @@
 </head>
 
 <body>
+    
     <h1>Practical-6 : Create a Card Layout using CSS layout properties.
     </h1>
     <div id="cards">
-        <div class="box" id="html">
+        <div class="boxes" id="html">
 
             <img src="./images/html.png" alt="">
             <h3>Introduction to Html </h3>
@@ -90,7 +94,7 @@
             <a href="html.html" id="link">Read More</a>
         </div>
 
-        <div class="box" id="css">
+        <div class="boxes" id="css">
             <img src="./images/css.jpg" alt="">
             <h3>Introduction to css </h3>
 
@@ -100,7 +104,7 @@
             <a href="css.html" id="link">Read More</a>
         </div>
 
-        <div class="box" id="jquery">
+        <div class="boxes" id="jquery">
             <img src="./images/jquer.png" alt="">
             <h3>Introduction to jquery </h3>
 
@@ -110,7 +114,7 @@
             <a href="jquery.html" id="link">Read More</a>
         </div>
 
-        <div class="box" id="bootsrap">
+        <div class="boxes" id="bootsrap">
             <img src="./images/bootstrap.jpg" alt="">
             <h3>Introduction to bootsrap </h3>
 

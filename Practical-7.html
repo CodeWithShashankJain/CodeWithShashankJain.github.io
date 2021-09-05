@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+
+>If the margin property has four values:
+
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+
+>If the margin property has three values:
+
+margin: 25px 50px 75px;
+top margin is 25px
+right and left margins are 50px
+bottom margin is 75px
+
+>If the margin property has two values:
+
+margin: 25px 50px;
+top and bottom margins are 25px
+right and left margins are 50px
+
+>If the margin property has one value:
+
+margin: 25px;
+all four margins are 25px
+ -->
 
 <head>
     <meta charset="UTF-8">
@@ -63,18 +91,22 @@
             border-radius: 50%;
         }
 
-        .section2,
-        .section3 {
+        .section2 {
+            border: 2px solid red;
             display: flex;
-            margin: 15px;
+            padding: 10px;
+        }
+        
+        .section-3 {
+            border: 2px solid red;
+            display: flex;
             padding: 10px;
         }
 
-        .main,
-        .article {
+        .main,.article {
+            border: 2px solid red;
             width: 50vw;
             height: 90vh;
-            margin: 16px 16px;
         }
 
         .articles {
@@ -82,7 +114,7 @@
             flex-wrap: wrap;
             background-color: #e9470cd3;
             flex-direction: column;
-            width: 95%;
+            width: 100%;
             height: 155px;
             margin: 13px;
             padding: 2px;
@@ -90,13 +122,13 @@
             justify-content: space-around;
         }
 
-        .articles:first-child {
+        /* .articles:first-child {
             margin-top: 0px;
-        }
-
+        } */
+        /* 
         .articles:last-child {
             height: 180px;
-        }
+        } */
 
         .main {
             background-color: grey;
@@ -111,7 +143,6 @@
         .box {
             display: flex;
             flex-wrap: wrap;
-            float: left;
             background-color: orangered;
             width: 20vw;
             height: 50vh;
@@ -157,6 +188,7 @@
             <div class="articles"><span class="text">Article-3</span></div>
         </div>
     </div>
+  
     <h2 style="text-align: center;">Section-3</h2>
     <div class="section-3">
         <div class="box"></div>
@@ -164,6 +196,7 @@
         <div class="box"></div>
         <div class="box"></div>
     </div>
+
     <h2 style="text-align: center;">Section-4</h2>
     <div class="section-4">
         <span class="text" style="padding: 15px;">Footer</span>
