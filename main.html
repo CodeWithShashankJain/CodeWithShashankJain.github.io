@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Template</title>
+
+     <style>
+          * {
+               margin: 0px;
+               padding: 0px;
+               box-sizing: border-box;
+               font-family: sans-serif;
+          }
+
+          .main {
+               height: 100vh;
+               scroll-behavior: smooth;
+          }
+
+          .topnav {
+               margin-top: 3px;
+               display: flex;
+               align-items: center;
+               width: 100%;
+               height: 70px;
+               padding: 25px;
+               justify-content: space-between;
+               box-shadow: 10px 10px 8px #f6f8f9
+          }
+
+          .nav a {
+               color: #94a5b7;
+               text-align: center;
+               padding: 10px 10px;
+               margin-right: 2px;
+               text-decoration: none;
+               font-size: 18px;
+          }
+
+          .nav a.active {
+               background-color: #2487ce;
+               border-radius: 5px;
+               padding: 10px;
+               color: white;
+          }
+
+          .one {
+               color: #2b688d;
+               text-align: center;
+               font-size: 40px;
+          }
+
+          .drop::after {
+               content: '';
+               border: 4px solid transparent;
+               border-top: 4px solid #99afc1;
+               margin-left: 2px;
+               margin-bottom: 3px;
+               display: inline-block;
+               vertical-align: bottom;
+          }
+
+
+          .cards {
+               height: 100vh;
+               display: flex;
+               padding: 15px;
+          }
+
+          .card {
+               display: flex;
+               flex-direction: column;
+               width: 80vh;
+               box-shadow: 5px 10px 10px white;
+               border-radius: 10px;
+               margin: 14px;
+               align-items: center;
+               padding: 30px;
+               justify-content: space-around;
+               box-shadow: 10px 10px 10px 10px whitesmoke;
+          }
+
+          .href {
+               background-color: white;
+               border: 2px solid #1b8ad0;
+               padding: 14px;
+               color: #1b8ad0;
+               text-align: center;
+               text-decoration: none;
+               border-radius: 5px;
+               width: 50%;
+          }
+
+          .hre {
+               border: 2px solid white;
+               padding: 14px;
+               color: white;
+               text-align: center;
+               text-decoration: none;
+               border-radius: 7px;
+               width: 50%;
+          }
+
+          .sp {
+               background-color: #2487ce;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="main">
+
+          <nav class="topnav">
+               <div class="one">
+                    OnePage
+               </div>
+
+               <ul class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Team</a>
+                    <a href="#" style="color: #2d97d5;">Pricing</a>
+                    <a href="#" class="drop">Dropdown</a>
+                    <a href="#">Contact</a>
+                    <a href="#" class="active">GetStarted</a>
+               </ul>
+          </nav>
+          <div class="cards">
+               <section class="card">
+                    <h5 style="color: #3a617f; font-size: 25px;">FREE</h5>
+                    <span style="color: #e7e7e7;"><sup style="vertical-align: top; color: #278acf;">$</sup><span
+                              style="font-size: 40px; color: #278acf;">0</span>/month</span>
+                    <span style="color: #8ca4b4;">Aida dere</span>
+                    <span style="color: #8ca4b4;">Nec Fugiit nisi</span>
+                    <span style="color: #8ca4b4;">Nulla at voltput dola</span>
+                    <span style="color: #8ca4b4; text-decoration: line-through;">phareta mossa</span>
+                    <span style="color: #8ca4b4; text-decoration: line-through;">Massa ultiters mi</span>
+                    <a href="" class="href">Buy Now</a>
+               </section>
+
+               <section class="card sp">
+                    <h5 style="color: white; font-size: 25px;">BUSSINESS</h5>
+                    <span style="color: #e7e7e7;"><sup style="vertical-align: top; color: white;">$</sup><span
+                              style="font-size: 40px; color: white;">19</span>/month</span>
+                    <span style="color: white;">Aida dere</span>
+                    <span style="color: white;">Nec Fugiit nisi</span>
+                    <span style="color: white;">Nulla at voltput dola</span>
+                    <span style="color: white; ">phareta mossa</span>
+                    <span style="color: white; text-decoration: line-through;">Massa ultiters</span>
+                    <a href="" class="hre">Buy Now</a>
+               </section>
+
+               <section class="card">
+                    <h5 style="color: #3a617f; font-size: 25px;">DEVELOPER</h5>
+                    <span style="color: #e7e7e7;"><sup style="vertical-align: top; color: #278acf;">$</sup><span
+                              style="font-size: 40px; color: #278acf;">29</span>/month</span>
+                    <span style="color: #8ca4b4;">Aida dere</span>
+                    <span style="color: #8ca4b4;">Nec Fugiit nisi</span>
+                    <span style="color: #8ca4b4;">Nulla at voltput dola</span>
+                    <span style="color: #8ca4b4;">phareta mossa</span>
+                    <span style="color: #8ca4b4;">Massa ultiters</span>
+                    <a href="" class="href">Buy Now</a>
+
+
+
+               </section>
+          </div>
+     </div>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Practical-10</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .header {
+        width: 100%;
+        height: 70px;
+        background-color: plum;
+        line-height: 70px;
+        text-align: center;
+        color: white;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header img {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    #chk {
+        display: none;
+    }
+
+    #show-btn,
+    #hide-btn {
+        position: fixed;
+        top: 20px;
+        left: 70px;
+        font-size: 30px;
+        color: white;
+    }
+
+    #hide-btn {
+        display: none;
+    }
+
+    #chk:checked~.sidebar {
+        left: 0%;
+    }
+
+    #chk:checked~#hide-btn {
+        display: block;
+    }
+
+    #chk:checked~#show-btn {
+        display: none;
+    }
+
+    #chk:checked~.content {
+        width: 80%;
+    }
+
+    .sidebar {
+        background-color: plum;
+        width: 20%;
+        height: 100%;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        transition: .3s;
+    }
+
+    .menu {
+        list-style: none;
+    }
+
+    .menu li {
+        border-bottom: solid 3px rgba(255, 255, 255, 0.1);
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        color: white;
+        line-height: 50px;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        border-left: solid white 8px;
+        transition: .5s;
+    }
+
+    .menu li a i {
+        margin: 0px 20px;
+    }
+
+    .logo {
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: solid 3px rgba(255, 255, 255, 0.1);
+        border-bottom: solid 3px rgba(255, 255, 255, 0.1);
+        padding: 5px 0px;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .logo a {
+        color: white;
+        font-size: 30px;
+    }
+
+    .content {
+        width: 100%;
+        float: right;
+        transition: .5s;
+        margin-top: 70px;
+        padding: 10px;
+    }
+
+    .content img {
+        display: block;
+        height: 400px;
+        width: 650px;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+
+    .content div {
+        width: 100%;
+        text-align: justify;
+    }
+
+    @media(max-width:864px) {
+        .sidebar {
+            width: 100%;
+        }
+
+        #chk:checked~.content {
+            width: 100%;
+        }
+
+        .menu {
+            list-style: none;
+            text-align: center;
+        }
+
+        .menu:first-child {
+            border-top: solid 3px rgba(255, 255, 255, 0.1);
+        }
+
+        .menu li a {
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;
+        }
+
+        .menu li a:hover {
+            border-left: solid white 20px;
+            transition: .5s;
+        }
+
+        .logo {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:690px) {
+        .content img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    @media(max-width:450px) {
+        .header h1 {
+            display: none;
+        }
+
+        .header {
+            display: block;
+        }
+
+        .header img {
+            float: right;
+        }
+
+        #show-btn,
+        #hide-btn {
+            top: 15px;
+            left: 40px;
+        }
+
+        .content img {
+            height: 300px;
+        }
+
+        .container {
+            min-width: 280px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <img src="1.jpeg" alt="">
+            <h1>FullStack</h1>
+        </div>
+        <input type="checkbox" id="chk">
+        <label for="chk" id="show-btn"><i class="fa fa-bars"></i></label>
+        <label for="chk" id="hide-btn"><i class="fa fa-times"></i></label>
+        <div class="sidebar">
+            <ul class="menu">
+                <li>
+                    <a href="#"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>About</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-server"></i>Service</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-rss"></i>Blog</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-id-card"></i>Contact</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-youtube-square"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+        <div class="content ">
+            <img src="2.jpeg" alt=" ">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima dignissimos eius asperiores
+                dolorum similique nulla deserunt, maxime aspernatur vitae expedita iste necessitatibus magnam ut neque
+                ipsa mollitia accusamus voluptatibus quibusdam illum
+                cum, praesentium dolore assumenda ducimus. Placeat ab hic delectus fugit provident eligendi eius
+                laboriosam nulla et quidem velit, ea enim. Incidunt qui, eligendi animi alias cumque recusandae,
+                possimus libero quod earum eum hic nisi accusantium.
+                Maxime deserunt nisi quam at assumenda libero et, non dicta consequatur, ratione voluptas earum sint
+                facere voluptates dolores. Illo quo alias officia eaque dicta, quibusdam, eum ut quidem velit blanditiis
+                ex laborum natus deleniti porro
+                libero dignissimos omnis enim. Eius quas ex dolorum maxime quaerat aliquid, totam voluptatem velit error
+                aspernatur atque fuga perferendis harum reiciendis exercitationem ipsam distinctio mollitia?
+                Voluptatibus nihil, itaque magnam, assumenda
+                inventore natus repudiandae, in molestias aperiam tempore aspernatur! Doloremque dolorum impedit libero
+                iste corrupti excepturi laborum blanditiis! Consectetur pariatur ullam eligendi neque quibusdam
+                molestiae reprehenderit. Velit voluptatibus,
+                omnis labore quisquam odit modi, voluptates asperiores dicta amet hic vel molestias mollitia ipsam
+                perferendis sed fugit voluptatum vero maxime rerum optio iure, quae voluptate consequatur? Facilis
+                suscipit praesentium dolore provident
+                quam nam in odit quibusdam labore officiis. Cum repudiandae in, impedit dolor error odit consectetur.
+                Natus dolores tempora, nobis atque eaque corporis, tempore, rerum fugiat expedita earum animi at?
+                Consectetur ea placeat quibusdam eius
+                itaque consequatur quia veniam? Quaerat repellendus commodi dolores non, perferendis magni. Id
+                accusantium consequuntur aperiam maxime cum velit! Consectetur officiis adipisci libero odio laborum
+                nemo nostrum in saepe quia velit veniam
+                eum ex id cumque ad ipsam provident aperiam cupiditate earum modi, magnam fuga. Eius explicabo amet
+                repellendus eum, cumque ab enim officia, neque fuga optio dolores ea distinctio dolorem fugit excepturi
+                voluptas impedit eveniet aspernatur
+                repudiandae. Minus totam vitae, perspiciatis tenetur consectetur alias, rem impedit quo sed cumque
+                quisquam commodi iusto non illo quasi aspernatur optio rerum expedita doloremque? Provident cupiditate
+                expedita non dolores culpa hic quis
+                neque perspiciatis obcaecati libero praesentium animi ea tempora maxime, sunt saepe earum et autem
+                dolore quo quae minima numquam vero eius. Voluptatem necessitatibus quibusdam vero veniam praesentium
+                suscipit asperiores tempora rem placeat
+                quas nulla excepturi natus illum incidunt optio, omnis nisi officia. In eos voluptate quasi. Assumenda
+                modi eligendi placeat quibusdam necessitatibus dignissimos, similique doloribus harum facilis, at qui
+                enim! Quam voluptatibus voluptas
+                eius facilis voluptatem ad veniam. Est adipisci quas illo aperiam vero explicabo delectus nemo amet
+                corrupti sit. Neque facilis id suscipit quisquam autem nam delectus, dolorum atque, sit dicta eveniet
+                minima voluptatum. Aspernatur autem
+                nobis, odit et quas facere eum accusamus incidunt, earum dicta voluptates ut modi sed esse delectus cum.
+                Minus dolor repudiandae architecto assumenda enim vitae voluptates esse sunt sapiente, unde, laudantium
+                facilis fugit facere laborum
+                vero sit repellat obcaecati ducimus. Deleniti officia, atque reiciendis quam a id doloremque amet iusto
+                aut ipsum laborum quisquam explicabo veniam commodi quae sapiente modi asperiores assumenda harum
+                provident quidem! Eveniet labore
+                a ipsam, repellendus perspiciatis at aperiam inventore, sapiente, recusandae iusto reprehenderit numquam
+                mollitia maiores officiis tempore corporis qui voluptates est. Repudiandae aperiam nostrum eligendi
+                quibusdam libero. Fuga repellendus
+                vero enim deleniti quos ipsam iusto, sapiente commodi quae, nisi expedita inventore debitis corrupti
+                dolore ex ducimus aliquid. Exercitationem suscipit velit expedita recusandae, aliquam numquam nisi enim
+                possimus reiciendis animi earum,
+                fuga esse quis eius. Suscipit dignissimos, id omnis quas obcaecati officia tempora natus porro
+                consectetur distinctio dolores laborum excepturi vero! Praesentium temporibus quaerat saepe itaque rem
+                soluta quidem quisquam quis. Aperiam,
+                ab sunt quas error nisi sed iste provident recusandae fugiat optio amet officia praesentium natus eos
+                nulla eum! Qui sunt veniam ipsam porro blanditiis repellendus voluptates, molestiae rrupti nemo maxime
+                id dolorum, accusamus ab similique in. Voluptates, neque. Voluptatum.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

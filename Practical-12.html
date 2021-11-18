@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>table in Practical-12</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .main {
+               display: flex;
+               flex-direction: column;
+               margin: auto;
+               padding: 4px;
+               margin-top: 4px;
+               border: 2px solid red;
+               width: 50vw;
+               height: 90vh;
+               text-align: center;
+          }
+
+          .basic {
+               background-color: #c1dcb7;
+          }
+
+          .plus {
+               background-color: #bad6c8;
+          }
+
+          .deluxe {
+               background-color: #bbd3dc;
+          }
+
+          .pro {
+               background-color: #d5e4bc;
+          }
+
+          .table {
+               width: 100%;
+               height: 80vh;
+          }
+          .button{
+               background-color: rgb(138, 63, 138);
+               color: white;
+               width:90px;
+               height: 40px;  
+               border-radius: 80px;
+          }
+     </style>
+
+
+</head>
+
+<body>
+
+     <div class="main">
+          <h2 style="text-align:center">Select your plan</h2>
+          <table class="table">
+               <colgroup class="basic"></colgroup>
+               <colgroup class="plus"></colgroup>
+               <colgroup class="deluxe"></colgroup>
+               <colgroup class="pro"></colgroup>
+               <tbody>
+                    <tr>
+                         <th><i class="material-icons">account_balance</i> Basic</th>
+                         <th><i class="material-icons">verified_user</i>Plus</th>
+                         <th><i class="material-icons">store</i>Deluxe</th>
+                         <th><i class="material-icons">grade</i>Pro</th>
+                    </tr>
+
+                    <tr class="first-child">
+                         <td>Rs 500/-</td>
+                         <td>Rs 1500/-</td>
+                         <td>Rs 2500/-</td>
+                         <td>Rs 3500/-</td>
+                    </tr>
+                    <tr>
+                         <td>50 pages</td>
+                         <td>75 pages</td>
+                         <td>unlimited</td>
+                         <td>unlimited</td>
+                    </tr>
+                    <tr>
+                         <td>3 users</td>
+                         <td>5 users</td>
+                         <td>10 users</td>
+                         <td>unlimited</td>
+                    </tr>
+                    <tr>
+                         <td>10 slides</td>
+                         <td>25 slides</td>
+                         <td>100 slides</td>
+                         <td>unlimited</td>
+                    </tr>
+                    <tr>
+                         <td>50 MB</td>
+                         <td>250 MB</td>
+                         <td>1 GB</td>
+                         <td>5 GB</td>
+                    </tr>
+                    <tr>
+                         <td>included</td>
+                         <td>included</td>
+                         <td>included</td>
+                         <td>included</td>
+                    </tr>
+                    <tr>
+                         <td><i class="material-icons green">done</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                    </tr>
+                    <tr>
+                         <td><i class="material-icons  red">highlight_off</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                    </tr>
+                    <tr>
+                         <td><i class="material-icons  red">highlight_off</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                         <td><i class="material-icons  green">done</i></td>
+                    </tr>
+                    <tr>
+                         <td><i class="material-icons red">highlight_off</i></td>
+                         <td><i class="material-icons red">highlight_off</i></td>
+                         <td><i class="material-icons green">done</i></td>
+                         <td><i class="material-icons green">done</i></td>
+                    </tr>
+                    <tr>
+                         <td><button class="button">Sign Up</button></td>
+                         <td><button class="button">Sign Up</button></td>
+                         <td><button class="button">Sign Up</button></td>
+                         <td><button class="button">Sign Up</button></td>
+                    </tr>
+               </tbody>
+          </table>
+     </div>
+</body>
+
+</html>
